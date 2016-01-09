@@ -11,9 +11,6 @@ config :logger, level: :warn
 
 # Configure your database
 config :hello, Hello.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "hello_test",
-  hostname: "localhost",
+  adapter: Sqlite.Ecto,
+  database: "db/hello_world_test.sqlite3",
   pool: Ecto.Adapters.SQL.Sandbox

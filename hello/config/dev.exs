@@ -36,4 +36,4 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :hello, Hello.Repo,
   adapter: Sqlite.Ecto,
-  database: "hello_world_dev.sqlite3"
+  database: "db/hello_world_dev.sqlite3"
