@@ -22,7 +22,7 @@ defmodule Rumbl.Permalink do
     { :ok, integer }
   end
 
-  def local( integer ) when is_integer( integer ) do
+  def load( integer ) when is_integer( integer ) do
     { :ok, integer }
   end
 
